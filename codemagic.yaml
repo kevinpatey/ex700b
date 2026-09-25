@@ -1,0 +1,83 @@
+workflows:
+
+  ios-native-build:
+    name: EX700B Remote (unsigned .ipa for Sideloadly)
+    max_build_duration: 30
+    instance_type: mac_mini_m2
+
+    environment:
+      xcode: latest
+
+    scripts:
+
+      - name: Check every Swift file is in the Xcode project
+        script: |
+          #!/usr/bin/env bash
+          missing=0
+          while IFS= read -r file; do
+            name=$(basename "$file")
+            if ! grep -q "path = $name;" EX700BRemote.xcodeproj/project.pbxproj; then
+              echo "❌ $file is not listed in EX700BRemote.xcodeproj/project.pbxproj"
+              missing=1
+            fi
+          done < <(find EX700BRemote -name '*.swift')
+          if [ "$missing" -eq 0 ]; then
+            echo "✅ All Swift files are in the Xcode project"
+          fi
+          exit $missing
+
+      - name: Build the app (unsigned)
+        script: |
+          #!/usr/bin/env bash
+          set -o pipefail
+          xcodebuild -version
+          mkdir -p build/logs
+          if ! xcodebuild \
+              -project EX700BRemote.xcodeproj \
+              -scheme EX700BRemote \
+              -configuration Release \
+              -sdk iphoneos \
+              -destination 'generic/platform=iOS' \
+              -derivedDataPath build/DerivedData \
+              CODE_SIGNING_ALLOWED=NO \
+              CODE_SIGNING_REQUIRED=NO \
+              CODE_SIGN_IDENTITY="" \
+              CURRENT_PROJECT_VERSION="${BUILD_NUMBER:-1}" \
+              build > build/logs/xcodebuild.log 2>&1
+          then
+            echo "❌ Build failed. Errors:"
+            grep -E "error:" build/logs/xcodebuild.log | sort -u | head -60
+            echo "----- last lines of the log -----"
+            tail -40 build/logs/xcodebuild.log
+            exit 1
+          fi
+          echo "Warnings (not a problem, just for info):"
+          grep -E "warning:" build/logs/xcodebuild.log | sort -u | head -30 || true
+          echo "✅ Build succeeded"
+
+      - name: Package EX700BRemote.ipa
+        script: |
+          #!/usr/bin/env bash
+          set -e
+          APP="build/DerivedData/Build/Products/Release-iphoneos/EX700BRemote.app"
+          test -d "$APP" || { echo "❌ $APP not found"; exit 1; }
+
+          echo "Bundle ID:  $(/usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' "$APP/Info.plist")"
+          echo "Executable: $(/usr/libexec/PlistBuddy -c 'Print :CFBundleExecutable' "$APP/Info.plist")"
+          echo "Version:    $(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$APP/Info.plist") ($(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$APP/Info.plist"))"
+          if [ -d "$APP/Metadata.appintents" ]; then
+            echo "✅ Siri / Shortcuts metadata included"
+          else
+            echo "⚠️ No Metadata.appintents folder – Siri phrases may not register"
+          fi
+
+          rm -rf build/ipa
+          mkdir -p build/ipa/Payload
+          cp -R "$APP" build/ipa/Payload/
+          (cd build/ipa && zip -qry EX700BRemote.ipa Payload && rm -rf Payload)
+          ls -lh build/ipa
+          echo "✅ Download EX700BRemote.ipa from Artifacts and install it with Sideloadly"
+
+    artifacts:
+      - build/ipa/*.ipa
+      - build/logs/*.log

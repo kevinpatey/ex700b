@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C00000000000000000000001 /* EX700BRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000001 /* EX700BRemoteApp.swift */; };
+		C00000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000002 /* ContentView.swift */; };
+		C00000000000000000000003 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000003 /* AppModel.swift */; };
+		C00000000000000000000004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000005 /* Assets.xcassets */; };
+		C00000000000000000000005 /* PanasonicTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000006 /* PanasonicTV.swift */; };
+		C00000000000000000000006 /* TVCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000007 /* TVCommand.swift */; };
+		C00000000000000000000007 /* PanasonicError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000008 /* PanasonicError.swift */; };
+		C00000000000000000000008 /* XMLText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000009 /* XMLText.swift */; };
+		C00000000000000000000009 /* PanasonicResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000000A /* PanasonicResponses.swift */; };
+		C0000000000000000000000A /* SOAPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000000B /* SOAPClient.swift */; };
+		C0000000000000000000000B /* PanasonicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000000C /* PanasonicController.swift */; };
+		C0000000000000000000000C /* LocalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000000D /* LocalNetwork.swift */; };
+		C0000000000000000000000D /* TVDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000000E /* TVDiscovery.swift */; };
+		C0000000000000000000000E /* TVStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000000F /* TVStore.swift */; };
+		C0000000000000000000000F /* RemoteComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000010 /* RemoteComponents.swift */; };
+		C00000000000000000000010 /* RemoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000011 /* RemoteView.swift */; };
+		C00000000000000000000011 /* AppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000012 /* AppsView.swift */; };
+		C00000000000000000000012 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000013 /* SetupView.swift */; };
+		C00000000000000000000013 /* PanasonicLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000014 /* PanasonicLabView.swift */; };
+		C00000000000000000000014 /* TVIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000015 /* TVIntents.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000000001 /* EX700BRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EX700BRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00000000000000000000001 /* EX700BRemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX700BRemoteApp.swift; sourceTree = "<group>"; };
+		B00000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B00000000000000000000003 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		B00000000000000000000004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00000000000000000000005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B00000000000000000000006 /* PanasonicTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanasonicTV.swift; sourceTree = "<group>"; };
+		B00000000000000000000007 /* TVCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCommand.swift; sourceTree = "<group>"; };
+		B00000000000000000000008 /* PanasonicError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanasonicError.swift; sourceTree = "<group>"; };
+		B00000000000000000000009 /* XMLText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLText.swift; sourceTree = "<group>"; };
+		B0000000000000000000000A /* PanasonicResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanasonicResponses.swift; sourceTree = "<group>"; };
+		B0000000000000000000000B /* SOAPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOAPClient.swift; sourceTree = "<group>"; };
+		B0000000000000000000000C /* PanasonicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanasonicController.swift; sourceTree = "<group>"; };
+		B0000000000000000000000D /* LocalNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetwork.swift; sourceTree = "<group>"; };
+		B0000000000000000000000E /* TVDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDiscovery.swift; sourceTree = "<group>"; };
+		B0000000000000000000000F /* TVStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVStore.swift; sourceTree = "<group>"; };
+		B00000000000000000000010 /* RemoteComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteComponents.swift; sourceTree = "<group>"; };
+		B00000000000000000000011 /* RemoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteView.swift; sourceTree = "<group>"; };
+		B00000000000000000000012 /* AppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsView.swift; sourceTree = "<group>"; };
+		B00000000000000000000013 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		B00000000000000000000014 /* PanasonicLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanasonicLabView.swift; sourceTree = "<group>"; };
+		B00000000000000000000015 /* TVIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVIntents.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000000000000000000032 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000003 = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000004 /* EX700BRemote */,
+				A00000000000000000000005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000004 /* EX700BRemote */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000001 /* EX700BRemoteApp.swift */,
+				B00000000000000000000002 /* ContentView.swift */,
+				B00000000000000000000003 /* AppModel.swift */,
+				B00000000000000000000004 /* Info.plist */,
+				B00000000000000000000005 /* Assets.xcassets */,
+				D00000000000000000000001 /* Models */,
+				D00000000000000000000002 /* Networking */,
+				D00000000000000000000003 /* Discovery */,
+				D00000000000000000000004 /* Storage */,
+				D00000000000000000000005 /* Views */,
+				D00000000000000000000006 /* Siri */,
+			);
+			path = EX700BRemote;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000001 /* EX700BRemote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000006 /* PanasonicTV.swift */,
+				B00000000000000000000007 /* TVCommand.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000002 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000008 /* PanasonicError.swift */,
+				B00000000000000000000009 /* XMLText.swift */,
+				B0000000000000000000000A /* PanasonicResponses.swift */,
+				B0000000000000000000000B /* SOAPClient.swift */,
+				B0000000000000000000000C /* PanasonicController.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000003 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000000D /* LocalNetwork.swift */,
+				B0000000000000000000000E /* TVDiscovery.swift */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000004 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000000F /* TVStore.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000010 /* RemoteComponents.swift */,
+				B00000000000000000000011 /* RemoteView.swift */,
+				B00000000000000000000012 /* AppsView.swift */,
+				B00000000000000000000013 /* SetupView.swift */,
+				B00000000000000000000014 /* PanasonicLabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000006 /* Siri */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000015 /* TVIntents.swift */,
+			);
+			path = Siri;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000002 /* EX700BRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000042 /* Build configuration list for PBXNativeTarget "EX700BRemote" */;
+			buildPhases = (
+				A00000000000000000000031 /* Sources */,
+				A00000000000000000000032 /* Frameworks */,
+				A00000000000000000000033 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EX700BRemote;
+			productName = EX700BRemote;
+			productReference = A00000000000000000000001 /* EX700BRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000006 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A00000000000000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000000041 /* Build configuration list for PBXProject "EX700BRemote" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00000000000000000000003;
+			productRefGroup = A00000000000000000000005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000002 /* EX700BRemote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00000000000000000000004 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00000000000000000000001 /* EX700BRemoteApp.swift in Sources */,
+				C00000000000000000000002 /* ContentView.swift in Sources */,
+				C00000000000000000000003 /* AppModel.swift in Sources */,
+				C00000000000000000000005 /* PanasonicTV.swift in Sources */,
+				C00000000000000000000006 /* TVCommand.swift in Sources */,
+				C00000000000000000000007 /* PanasonicError.swift in Sources */,
+				C00000000000000000000008 /* XMLText.swift in Sources */,
+				C00000000000000000000009 /* PanasonicResponses.swift in Sources */,
+				C0000000000000000000000A /* SOAPClient.swift in Sources */,
+				C0000000000000000000000B /* PanasonicController.swift in Sources */,
+				C0000000000000000000000C /* LocalNetwork.swift in Sources */,
+				C0000000000000000000000D /* TVDiscovery.swift in Sources */,
+				C0000000000000000000000E /* TVStore.swift in Sources */,
+				C0000000000000000000000F /* RemoteComponents.swift in Sources */,
+				C00000000000000000000010 /* RemoteView.swift in Sources */,
+				C00000000000000000000011 /* AppsView.swift in Sources */,
+				C00000000000000000000012 /* SetupView.swift in Sources */,
+				C00000000000000000000013 /* PanasonicLabView.swift in Sources */,
+				C00000000000000000000014 /* TVIntents.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000000051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = EX700BRemote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinpatey.EX700BRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A00000000000000000000052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = EX700BRemote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinpatey.EX700BRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A00000000000000000000053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A00000000000000000000054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000041 /* Build configuration list for PBXProject "EX700BRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000053 /* Debug */,
+				A00000000000000000000054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000042 /* Build configuration list for PBXNativeTarget "EX700BRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000051 /* Debug */,
+				A00000000000000000000052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000006 /* Project object */;
+}
